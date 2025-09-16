@@ -1,0 +1,18 @@
+name: day03_environments
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - fastapi
+      - uvicorn
+      - langchain
+      - openai
+      - weaviate-client
+      - jupyter
+      - openai
+      - python-dotenv
+      - sentence-transformers
+      - cohere
