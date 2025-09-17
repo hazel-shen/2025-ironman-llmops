@@ -10,7 +10,7 @@ client = OpenAI()
 # 讀取 .env 檔案裡面的環境變數
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
-    raise ValueError("沒有找到 OPEN_API_KEY，請檢察環境變數！")
+    raise ValueError("沒有找到 OPENAI_API_KEY，請檢察環境變數！")
 
 # 比較這兩個字串的相近程度
 texts = ["鐵人賽好熱血", "我想寫一個 QA Bot"]
