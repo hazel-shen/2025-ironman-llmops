@@ -12,3 +12,4 @@
 | ---------- | :--------------------------------------------------------------------------------------------: |
 | 2025/09/15 | [Day01 - 為什麼需要 LLMOps？與傳統 MLOps 差異](https://ithelp.ithome.com.tw/articles/10380053) |
 | 2025/09/16 | [Day02 - 系列專案介紹：企業知識庫 QA Chatbot](https://ithelp.ithome.com.tw/articles/10380054)  |
+| 2025/09/17 |       [Day03 - 環境準備：Docker + Conda](https://ithelp.ithome.com.tw/articles/10381623)       |
