@@ -1,0 +1,17 @@
+name: day05_embedding
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - python-dotenv
+  # 如需做本地向量檢索/測試，可加上 faiss-cpu（選用）
+  # - faiss-cpu
+  - pip:
+      - openai>=1.40.0
+      - cohere>=5.5.8
+      - sentence-transformers>=3.0.0
+      # 若日後要做批量處理/資料清洗可用
+      - tqdm>=4.66.0
+      - pandas>=2.2.0
