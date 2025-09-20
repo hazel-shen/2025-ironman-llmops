@@ -15,6 +15,7 @@
 | 2025/09/17 |               [Day03 - 環境準備：Docker + Conda](https://ithelp.ithome.com.tw/articles/10381623)               |
 | 2025/09/18 |  [Day04 - 向量資料庫（Vector Database）- 常見選項與實務比較](https://ithelp.ithome.com.tw/articles/10382486)   |
 | 2025/09/19 | [Day05 - 向量模型（Embedding）- 四種 Embedding 模型實測與選型](https://ithelp.ithome.com.tw/articles/10383158) |
+| 2025/09/20 |      [Day06 - 初探 RAG（Retrieval-Augmented Generation）](https://ithelp.ithome.com.tw/articles/10384021)      |
 
 ## ⚠️ 使用提醒
 
