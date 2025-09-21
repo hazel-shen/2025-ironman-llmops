@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RAG QA Bot Demo</title>
+  <style>
+    body { font-family: ui-sans-serif, system-ui; max-width: 720px; margin: 40px auto; }
+    input { width: 70%; padding: 8px; }
+    button { padding: 8px 12px; }
+    pre { background: #f6f6f6; padding: 12px; border-radius: 8px; white-space: pre-wrap; }
+    .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.25); display: none; align-items: center; justify-content: center; z-index: 9999; }
+    .overlay.show { display: flex; }
+    .spinner { width: 48px; height: 48px; border: 5px solid #fff; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .muted { opacity: 0.6; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <h2>RAG QA Bot Demo</h2>
+  <input type="text" id="question" placeholder="輸入你的問題">
+  <button id="askBtn">提問</button>
+  <pre id="answer"></pre>
+
+  <div id="loading" class="overlay"><div class="spinner" aria-label="Loading"></div></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("question");
+      const btn = document.getElementById("askBtn");
+      const out = document.getElementById("answer");
+      const loading = document.getElementById("loading");
+
+      // 若前端是由 FastAPI 服務（同源），可用 origin；否則用固定位址
+      const API_BASE = window.location.origin || "http://127.0.0.1:8000";
+
+      function showLoading(on) {
+        loading.classList.toggle("show", on);
+        input.disabled = on;
+        input.classList.toggle("muted", on);
+        btn.disabled = on;
+        btn.classList.toggle("muted", on);
+      }
+
+      async function ask() {
+        const q = input.value.trim();
+        if (!q) return;
+        showLoading(true);
+        out.textContent = "";
+        try {
+          const res = await fetch(`${API_BASE}/ask?q=${encodeURIComponent(q)}`);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          out.textContent =
+            `📌 問題: ${data.question}\n\n` +
+            `📚 參考文件: ${data.context}\n\n` +
+            `🤖 答案: ${data.answer}`;
+        } catch (err) {
+          out.textContent = `⚠️ 請求失敗：${err}`;
+        } finally {
+          showLoading(false);
+        }
+      }
+
+      btn.addEventListener("click", ask);
+      input.addEventListener("keydown", (e) => { if (e.key === "Enter") ask(); });
+    });
+  </script>
+</body>
+</html>
