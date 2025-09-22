@@ -1,0 +1,14 @@
+name: day08_cleaning_and_chunking
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - beautifulsoup4
+      - trafilatura
+      - regex
+      - unicodedata2
+      - langdetect
+      - python-dotenv
+      - openai>=1.0.0
