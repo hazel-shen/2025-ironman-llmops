@@ -17,6 +17,7 @@
 | 2025/09/19 | [Day05 - 向量模型（Embedding）- 四種 Embedding 模型實測與選型](https://ithelp.ithome.com.tw/articles/10383158) |
 | 2025/09/20 |      [Day06 - 初探 RAG（Retrieval-Augmented Generation）](https://ithelp.ithome.com.tw/articles/10384021)      |
 | 2025/09/21 |         [Day07 — 最小可行的 RAG QA Bot（Web 版 MVP）](https://ithelp.ithome.com.tw/articles/10384741)          |
+| 2025/09/22 | [Day08 - 文件清洗 (Cleaning) 與切片策略 (Chunking Strategies)](https://ithelp.ithome.com.tw/articles/10385277) |
 
 ## ⚠️ 使用提醒
 
