@@ -1,0 +1,7 @@
+beautifulsoup4
+trafilatura
+regex
+unicodedata2
+langdetect
+python-dotenv
+openai>=1.0.0
