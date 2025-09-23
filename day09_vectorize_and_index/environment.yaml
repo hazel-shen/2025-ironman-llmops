@@ -1,0 +1,12 @@
+name: day09_vectorize_and_index
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - llvm-openmp # 由 conda-forge 提供 OpenMP
+  - faiss-cpu=1.8.0 # 重要：用 conda-forge 的 faiss-cpu，避免 pip 版夾帶 .dylibs
+  - pip>=23.3
+  - pip:
+      - python-dotenv>=1.0.1
+      - openai>=1.40.0
