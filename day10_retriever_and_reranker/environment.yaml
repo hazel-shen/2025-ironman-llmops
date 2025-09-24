@@ -1,0 +1,16 @@
+name: day10_retriever_and_reranker
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - numpy>=1.24
+      - faiss-cpu>=1.8.0
+      - sentence-transformers>=3.0.0
+      - torch>=2.2.0
+      - transformers>=4.43.0
+      - tqdm>=4.66
+      - openai>=1.35
+      - python-dotenv>=1.0
