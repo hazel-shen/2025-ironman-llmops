@@ -19,6 +19,7 @@
 | 2025/09/21 |         [Day07 — 最小可行的 RAG QA Bot（Web 版 MVP）](https://ithelp.ithome.com.tw/articles/10384741)          |
 | 2025/09/22 | [Day08 - 文件清洗 (Cleaning) 與切片策略 (Chunking Strategies)](https://ithelp.ithome.com.tw/articles/10385277) |
 | 2025/09/23 |       [Day09 - 向量化 （Vectorize）與索引（Index）建立](https://ithelp.ithome.com.tw/articles/10386191)        |
+| 2025/09/24 |    [Day10 - RAG 查詢實作：Retriever ＋ Reranker 與模型評測](https://ithelp.ithome.com.tw/articles/10386952)    |
 
 ## ⚠️ 使用提醒
 
