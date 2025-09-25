@@ -8,18 +8,19 @@
 
 ## Articles & Links
 
-| 日期       |                                                      文章                                                      |
-| ---------- | :------------------------------------------------------------------------------------------------------------: |
-| 2025/09/15 |         [Day01 - 為什麼需要 LLMOps？與傳統 MLOps 差異](https://ithelp.ithome.com.tw/articles/10380053)         |
-| 2025/09/16 |         [Day02 - 系列專案介紹：企業知識庫 QA Chatbot](https://ithelp.ithome.com.tw/articles/10380054)          |
-| 2025/09/17 |               [Day03 - 環境準備：Docker + Conda](https://ithelp.ithome.com.tw/articles/10381623)               |
-| 2025/09/18 |  [Day04 - 向量資料庫（Vector Database）- 常見選項與實務比較](https://ithelp.ithome.com.tw/articles/10382486)   |
-| 2025/09/19 | [Day05 - 向量模型（Embedding）- 四種 Embedding 模型實測與選型](https://ithelp.ithome.com.tw/articles/10383158) |
-| 2025/09/20 |      [Day06 - 初探 RAG（Retrieval-Augmented Generation）](https://ithelp.ithome.com.tw/articles/10384021)      |
-| 2025/09/21 |         [Day07 — 最小可行的 RAG QA Bot（Web 版 MVP）](https://ithelp.ithome.com.tw/articles/10384741)          |
-| 2025/09/22 | [Day08 - 文件清洗 (Cleaning) 與切片策略 (Chunking Strategies)](https://ithelp.ithome.com.tw/articles/10385277) |
-| 2025/09/23 |       [Day09 - 向量化 （Vectorize）與索引（Index）建立](https://ithelp.ithome.com.tw/articles/10386191)        |
-| 2025/09/24 |    [Day10 - RAG 查詢實作：Retriever ＋ Reranker 與模型評測](https://ithelp.ithome.com.tw/articles/10386952)    |
+| 日期       |                                                              文章                                                              |
+| ---------- | :----------------------------------------------------------------------------------------------------------------------------: |
+| 2025/09/15 |                 [Day01 - 為什麼需要 LLMOps？與傳統 MLOps 差異](https://ithelp.ithome.com.tw/articles/10380053)                 |
+| 2025/09/16 |                 [Day02 - 系列專案介紹：企業知識庫 QA Chatbot](https://ithelp.ithome.com.tw/articles/10380054)                  |
+| 2025/09/17 |                       [Day03 - 環境準備：Docker + Conda](https://ithelp.ithome.com.tw/articles/10381623)                       |
+| 2025/09/18 |          [Day04 - 向量資料庫（Vector Database）- 常見選項與實務比較](https://ithelp.ithome.com.tw/articles/10382486)           |
+| 2025/09/19 |         [Day05 - 向量模型（Embedding）- 四種 Embedding 模型實測與選型](https://ithelp.ithome.com.tw/articles/10383158)         |
+| 2025/09/20 |              [Day06 - 初探 RAG（Retrieval-Augmented Generation）](https://ithelp.ithome.com.tw/articles/10384021)              |
+| 2025/09/21 |                 [Day07 — 最小可行的 RAG QA Bot（Web 版 MVP）](https://ithelp.ithome.com.tw/articles/10384741)                  |
+| 2025/09/22 |         [Day08 - 文件清洗 (Cleaning) 與切片策略 (Chunking Strategies)](https://ithelp.ithome.com.tw/articles/10385277)         |
+| 2025/09/23 |               [Day09 - 向量化 （Vectorize）與索引（Index）建立](https://ithelp.ithome.com.tw/articles/10386191)                |
+| 2025/09/24 |            [Day10 - RAG 查詢實作：Retriever ＋ Reranker 與模型評測](https://ithelp.ithome.com.tw/articles/10386952)            |
+| 2025/09/25 | [Day11 - 上下文組裝（Context Assembly）：實測四種策略，讓 LLM「讀得懂又省錢」](https://ithelp.ithome.com.tw/articles/10387588) |
 
 ## ⚠️ 使用提醒
 
