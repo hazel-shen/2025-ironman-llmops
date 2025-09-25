@@ -1,0 +1,24 @@
+name: day11_context_assembly # Conda 環境名稱，可依專案需求修改
+channels:
+  - pytorch # PyTorch 官方頻道（含 CPU/GPU 對應套件）
+  - conda-forge # 社群維護套件，更新快、涵蓋廣
+  - defaults # Conda 預設頻道，作為最後補充來源
+
+dependencies:
+  # ── 基礎 ──
+  - python=3.10 # 固定 Python 版本，避免相容性問題
+  - pip # 確保能安裝 pip 套件
+
+  # ── 科學運算核心 ──
+  - pytorch>=2.6 # PyTorch 主框架（>=2.6 避免 CVE-2025-32434）
+  - numpy # 基礎數值運算
+
+  # ── NLP 常見依賴 ──
+  - sentencepiece # T5 / mT5 / Pegasus 族 tokenizer 依賴
+  - protobuf # Hugging Face 有些 tokenizer/序列化需要
+  - tokenizers # HF Transformers 加速的底層 tokenizer lib
+  - pip:
+      - transformers>=4.44 # HF Transformers，提供 AutoModel/Tokenizer
+      - accelerate>=0.33 # HF 推論/分散式工具，加速/自動設備選擇
+      - huggingface-hub>=0.23 # 模型下載/管理 API
+      - safetensors>=0.4 # 安全高效的模型權重格式，避免 torch.load 問題
