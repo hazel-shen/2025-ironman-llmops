@@ -1,0 +1,33 @@
+name: day12_version_control
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+
+  # 開發/筆記本
+  - ipykernel
+  - jupyter
+
+  # 基礎工具
+  - openssl
+  - ca-certificates
+  - certifi
+  - setuptools
+  - wheel
+
+  # Day12 必要套件（全部走 conda-forge）
+  - pdfplumber
+  - scikit-learn
+  - requests
+  - beautifulsoup4
+  - lxml # 若裝不順可先刪掉
+
+  # 資料版本控制
+  - dvc
+  - dvc-s3
+
+  # 如需額外 pip 套件，再加上 pip 與明確清單（不可留空）：
+  # - pip
+  # - pip:
+  #     - some-extra-package==1.2.3
