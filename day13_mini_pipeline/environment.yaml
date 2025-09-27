@@ -1,0 +1,11 @@
+name: day13_mini_pipeline
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - openai>=1.45.0
+      - python-dotenv
+      - numpy
