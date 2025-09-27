@@ -1,0 +1,12 @@
+name: day13_data_drift
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - numpy>=1.26
+      - pyyaml>=6.0.1
+      - python-dotenv>=1.0.1
+      - openai>=1.45.0
