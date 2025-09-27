@@ -22,6 +22,7 @@
 | 2025/09/24 |            [Day10 - RAG 查詢實作：Retriever ＋ Reranker 與模型評測](https://ithelp.ithome.com.tw/articles/10386952)            |
 | 2025/09/25 | [Day11 - 上下文組裝（Context Assembly）：實測四種策略，讓 LLM「讀得懂又省錢」](https://ithelp.ithome.com.tw/articles/10387588) |
 | 2025/09/26 |             [Day12 - 知識庫資料管理：多來源整合 × 可追溯版本控制](https://ithelp.ithome.com.tw/articles/10388360)              |
+| 2025/09/27 |         [Day13 - 為什麼知識會「過期」？Data Drift 偵測與更新策略實作](https://ithelp.ithome.com.tw/articles/10388907)          |
 
 ## ⚠️ 使用提醒
 
