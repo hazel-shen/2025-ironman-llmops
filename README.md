@@ -23,6 +23,7 @@
 | 2025/09/25 | [Day11 - 上下文組裝（Context Assembly）：實測四種策略，讓 LLM「讀得懂又省錢」](https://ithelp.ithome.com.tw/articles/10387588) |
 | 2025/09/26 |             [Day12 - 知識庫資料管理：多來源整合 × 可追溯版本控制](https://ithelp.ithome.com.tw/articles/10388360)              |
 | 2025/09/27 |         [Day13 - 為什麼知識會「過期」？Data Drift 偵測與更新策略實作](https://ithelp.ithome.com.tw/articles/10388907)          |
+| 2025/09/28 | [Day14 - LLMOps Pipeline 自動化實戰：用 Prefect 與 Dagster，拯救你的睡眠時間](https://ithelp.ithome.com.tw/articles/10389635)  |
 
 ## ⚠️ 使用提醒
 
