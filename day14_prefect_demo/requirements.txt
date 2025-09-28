@@ -1,0 +1,8 @@
+prefect==2.19.8
+pydantic==2.7.1
+pydantic-core==2.18.2
+griffe>=0.44,<1.0
+python-dotenv==1.0.1
+openai==1.40.2
+beautifulsoup4==4.12.3
+httpx<0.28,>=0.27
