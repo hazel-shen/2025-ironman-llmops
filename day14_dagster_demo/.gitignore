@@ -1,0 +1,50 @@
+.env
+
+# === Python cache / build ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+build/
+dist/
+
+# === Virtual environments ===
+.venv/
+venv/
+# ENV/
+.ipynb_checkpoints/
+
+# === Conda environment ===
+*.conda
+
+# === Logs / Temp ===
+*.log
+*.tmp
+*.swp
+*.swo
+
+# === OS / Editor specific ===
+.DS_Store
+.idea/
+.vscode/
+
+# === Secrets / Keys ===
+.env
+*.key
+*.pem
+
+# Docker / data volumes
+volumes/
+data/vector_index.json
+
+# build artifacts
+index/
+*.index
+*.npy
+*.pt
+*.bin
+candidates.json
+reranked.json
+artifacts/

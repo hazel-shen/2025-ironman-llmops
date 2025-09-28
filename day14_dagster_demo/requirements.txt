@@ -1,0 +1,4 @@
+dagster==1.8.8
+dagster-webserver==1.8.8
+openai>=1.40.2
+python-dotenv==1.0.1
