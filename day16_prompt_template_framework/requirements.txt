@@ -1,0 +1,14 @@
+# 基本套件
+python-dotenv>=1.0.1
+rich>=13.7.1
+
+# OpenAI API client
+openai>=1.37.0
+
+# LangChain 生態
+langchain>=0.2.11
+langchain-core>=0.2.21
+langchain-openai>=0.1.7
+
+# Guidance
+guidance>=0.1.14
