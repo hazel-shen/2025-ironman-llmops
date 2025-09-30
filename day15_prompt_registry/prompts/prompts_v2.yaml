@@ -1,0 +1,36 @@
+# prompts/prompts_v2.yaml
+prompts:
+  faq:
+    description: "客服 FAQ：JSON 格式輸出，附引用"
+    template: |
+      你是一個專業客服助理，請依據下列文件回答問題，並用 JSON 格式輸出：
+      {
+        "answer": "根據文件的回答，簡短扼要。",
+        "citations": ["相關文件片段"]
+      }
+
+      【文件內容】
+      {{ context }}
+
+      【問題】
+      {{ question }}
+
+      【回答要求】
+      - 僅能引用文件，不要自行捏造
+      - 若文件中無相關資訊，請將 answer 設為「文件中未提及」
+      - citations 欄位至少包含一個文件片段
+
+  summary:
+    description: "文件總結：JSON 條列三點"
+    template: |
+      請將以下內容總結為三點重點，並輸出為 JSON：
+      {
+        "bullets": [
+          "第一點，不超過 20 字",
+          "第二點，不超過 20 字",
+          "第三點，不超過 20 字"
+        ]
+      }
+
+      【文件內容】
+      {{ context }}

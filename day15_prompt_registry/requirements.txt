@@ -1,0 +1,16 @@
+# YAML 讀取
+pyyaml>=6.0
+
+# Jinja2 模板引擎
+jinja2>=3.1.2
+
+# 測試框架
+pytest>=7.4.0
+
+# Web API (FastAPI Gateway 用)
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+
+# OpenAI
+openai>=1.40.0
+python-dotenv>=1.0.1   # 建議用來讀 .env

@@ -1,0 +1,21 @@
+# prompts/prompts_v1.yaml
+prompts:
+  faq:
+    description: "客服 FAQ：根據文件回答使用者問題，輸出條列式。"
+    template: |
+      你是一個專業客服助理，請根據以下文件回答使用者問題，並用條列式輸出。
+      【文件片段】
+      {{ context }}
+
+      【問題】
+      {{ question }}
+
+      【回答要求】
+      - 僅引用文件內容，不要捏造
+      - 若文件無相關資訊，回覆「文件中未提及」
+
+  summary:
+    description: "文件總結：三點重點。"
+    template: |
+      請將以下內容總結為三點重點，每點不超過 20 字：
+      {{ context }}
