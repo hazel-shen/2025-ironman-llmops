@@ -25,6 +25,7 @@
 | 2025/09/27 |         [Day13 - 為什麼知識會「過期」？Data Drift 偵測與更新策略實作](https://ithelp.ithome.com.tw/articles/10388907)          |
 | 2025/09/28 | [Day14 - LLMOps Pipeline 自動化實戰：用 Prefect 與 Dagster，拯救你的睡眠時間](https://ithelp.ithome.com.tw/articles/10389635)  |
 | 2025/09/29 |     [Day15 - Prompt Generation：用模板和版本管理 Prompt，規範 LLM 的回應](https://ithelp.ithome.com.tw/articles/10390630)      |
+| 2025/09/30 |        [Day16 - LangChain × Guidance：打造可組合、可控的 Prompt 工作流](https://ithelp.ithome.com.tw/articles/10391276)        |
 
 ## ⚠️ 使用提醒
 
