@@ -1,0 +1,27 @@
+{
+  "title": "LLM Observability (Flask Demo)",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Total Requests",
+      "targets": [{ "expr": "sum(llm_requests_total)" }],
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency (p95)",
+      "targets": [
+        { "expr": "histogram_quantile(0.95, sum(rate(llm_request_latency_seconds_bucket[1m])) by (le))" }
+      ],
+      "gridPos": { "h": 6, "w": 16, "x": 8, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Cost (USD) – rate",
+      "targets": [{ "expr": "rate(llm_cost_usd_total[1m])" }],
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 6 }
+    }
+  ],
+  "schemaVersion": 38,
+  "version": 1
+}

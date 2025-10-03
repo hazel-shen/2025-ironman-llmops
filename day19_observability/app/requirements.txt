@@ -1,0 +1,9 @@
+flask==3.0.3
+prometheus-client==0.20.0
+gunicorn==22.0.0
+openai>=1.35.0
+httpx>=0.27.0
+python-dotenv>=1.0.1
+requests>=2.31.0,<3
+fastapi>=0.112.0
+uvicorn>=0.30.0
