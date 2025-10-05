@@ -1,0 +1,9 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: llm-cache-demo-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis:/data # 把 redis 的 /data 掛到本機 ./data/redis
+    command: ["redis-server", "--appendonly", "yes"] # 啟用 AOF 持久化

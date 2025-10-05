@@ -1,0 +1,19 @@
+name: day21_cache
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - uvicorn
+  - fastapi
+  - redis-py=5.*
+  - pydantic=2.*
+  - pydantic-settings
+  - prometheus_client
+  - numpy
+  - httpx
+  - pip
+  - pip:
+      - openai>=1.40.0
+      - pytest
+      - pytest-asyncio
+      - httpx[http2]
