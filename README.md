@@ -30,6 +30,7 @@
 | 2025/10/02 |     [Day18 - 用 FastAPI 實作 LLM API Gateway：驗證、限流、觀測與實務選型](https://ithelp.ithome.com.tw/articles/10392318)      |
 | 2025/10/03 |     [Day19 - 掌握 LLM 應用可觀測性：監控延遲、Token 與成本（含工具選型）](https://ithelp.ithome.com.tw/articles/10392798)      |
 | 2025/10/04 |               [Day20 - LLM 回應品質監控：幻覺偵測與三層防護實作](https://ithelp.ithome.com.tw/articles/10393293)               |
+| 2025/10/05 |                [Day21 - LLM 應用快取實戰：成本改善 × 加速回應](https://ithelp.ithome.com.tw/articles/10393768)                 |
 
 ## ⚠️ 使用提醒
 
