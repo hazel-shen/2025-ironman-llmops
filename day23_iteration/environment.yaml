@@ -1,0 +1,13 @@
+# environment.yaml
+name: day23_iteration
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy=1.26.*
+  - faiss-cpu=1.8.0
+  - pytorch=2.4.*
+  - pip
+  - pip:
+      - sentence-transformers==3.0.1
+      - requests==2.32.3
+      - openai>=1.51.0
