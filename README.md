@@ -32,6 +32,7 @@
 | 2025/10/04 |               [Day20 - LLM 回應品質監控：幻覺偵測與三層防護實作](https://ithelp.ithome.com.tw/articles/10393293)               |
 | 2025/10/05 |                [Day21 - LLM 應用快取實戰：成本改善 × 加速回應](https://ithelp.ithome.com.tw/articles/10393768)                 |
 | 2025/10/06 |              [Day22 - LLM 與知識庫的版本控制中心：Model Registry](https://ithelp.ithome.com.tw/articles/10394144)              |
+| 2025/10/07 |      [Day23 - 讓 LLM 應用與時俱進：RAG 增量 × Fine-tuning 部署與治理指南](https://ithelp.ithome.com.tw/articles/10394515)      |
 
 ## ⚠️ 使用提醒
 
