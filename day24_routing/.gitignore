@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Envs
+.env
+.venv/
+
+# Artifacts
+*.tar.gz
+*.index
+
+# Local data (若不想忽略可自行調整)
+/data/userdict.txt

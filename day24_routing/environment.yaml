@@ -1,0 +1,16 @@
+name: day24_routing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - fastapi>=0.110
+      - uvicorn>=0.30
+      - pydantic>=2.6
+      - numpy>=1.26
+      - scikit-learn>=1.5
+      - prometheus-client>=0.20
+      - httpx>=0.27
+      - pytest>=8.3
+      - jieba>=0.42
