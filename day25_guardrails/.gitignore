@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Envs
+.env
+.venv/
+
+# Artifacts
+*.tar.gz
+*.index

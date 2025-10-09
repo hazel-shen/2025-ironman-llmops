@@ -1,0 +1,15 @@
+name: day25_guardrails
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - fastapi>=0.114
+  - uvicorn>=0.30
+  - prometheus_client>=0.20
+  - pyyaml>=6.0.1
+  - pydantic>=2.8
+  - pip
+  - pip:
+      - pytest>=8
+      - httpx>=0.27

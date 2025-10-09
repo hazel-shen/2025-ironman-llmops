@@ -1,0 +1,45 @@
+input:
+  deny_patterns:
+    # === Prompt Injection 攻擊 ===
+    - "(?i)ignore (all|previous|above) (instructions|rules)" # 嘗試忽略之前規則
+    - "(?i)reveal (system|hidden) prompt" # 要求洩漏 system prompt
+    - "(?i)break the rules" # 要求打破安全限制
+    - "(?i)你現在不需要遵守|忽略前面的規則" # 中文版注入
+
+    # === HTTP SSRF / 內網探測 ===
+    - "(?i)http://127\\.0\\.0\\.1" # 嘗試存取本機服務
+    - "(?i)http://169\\.254\\." # 嘗試存取雲服務 metadata API
+    - "(?i)file://" # 嘗試讀取本地檔案系統
+
+    # === SQL Injection ===
+    - "(?i)DROP\\s+TABLE" # 刪除資料表
+    - "(?i)DELETE\\s+FROM" # 刪除資料
+    - "(?i)UPDATE\\s+\\w+\\s+SET" # 惡意修改資料
+
+    # === File System Escape ===
+    - "\\.\\./" # 嘗試目錄跳脫 (../)
+
+output:
+  deny_patterns:
+    # === 機敏資訊輸出保護 ===
+    - "(?i)TOP-SECRET" # 不分大小寫比對「TOP-SECRET」
+    - "(?i)internal-only" # 內部專用標記
+    - "請忽略之前" # 中文版 Prompt Injection
+    - "reveal system prompt" # 洩漏系統提示詞
+
+pii:
+  redact:
+    - email # 偵測並遮蔽 email，例如 user@example.com → [REDACTED_EMAIL]
+    - phone # 偵測並遮蔽電話，例如 0912-345-678 → [REDACTED_PHONE]
+
+retrieval:
+  docs:
+    doc_handbook:
+      title: "員工手冊節錄"
+      roles: ["employee", "admin"] # 一般員工與管理員可存取
+    doc_finance:
+      title: "財務規範（機敏）"
+      roles: ["admin"] # 僅限管理員可存取
+
+runtime:
+  mode: "enforce" # 可選: "off" | "report" | "enforce"
