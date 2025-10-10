@@ -35,6 +35,7 @@
 | 2025/10/07 |       [Day23 - 讓 LLM 應用與時俱進：RAG 增量 × Fine-tuning 部署與治理指南](https://ithelp.ithome.com.tw/articles/10394515)        |
 | 2025/10/08 |                  [Day24 - LLM 應用分流：用任務分類做到省錢可靠](https://ithelp.ithome.com.tw/articles/10395029)                   |
 | 2025/10/09 | [Day25 - LLM 應用安全：OWASP Guardrails 防 Prompt Injection 與資料外洩（含實測）](https://ithelp.ithome.com.tw/articles/10395288) |
+|2025/10/10| [Day26 - LLM 應用成本改善：如何採用 MVP 三步驟節省 60% 成本？](https://ithelp.ithome.com.tw/articles/10395700)|
 
 ## ⚠️ 使用提醒
 
