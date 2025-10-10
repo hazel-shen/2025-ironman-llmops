@@ -2,10 +2,12 @@
 from pathlib import Path
 import yaml
 from jinja2 import Template
+from jinja2.sandbox import SandboxedEnvironment
 
 class PromptRegistry:
     def __init__(self, folder: str):
         self.folder = Path(folder)
+        self._env = SandboxedEnvironment()
         self._prompts = {}  # {version: {name: template}}
         self._load_all()
 
@@ -26,5 +28,5 @@ class PromptRegistry:
         return self._prompts[version][name]["template"]
 
     def render(self, name: str, version: str, **vars):
-        tmpl = Template(self.get(name, version))
+        tmpl = self._env.from_string(self.get(name, version))
         return tmpl.render(**vars)
