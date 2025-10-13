@@ -38,6 +38,7 @@
 | 2025/10/10 |          [Day26 - LLM 應用成本改善：如何採用 MVP 三步驟節省 60% 成本？](https://ithelp.ithome.com.tw/articles/10395700)           |
 | 2025/10/11 | [Day27 - RAG FAQ Chatbot 實戰案例 I：功能驗收全紀錄（檢索 × 快取 × 安全 × 監控）](https://ithelp.ithome.com.tw/articles/10396078) |
 | 2025/10/12 |   [Day28 - RAG FAQ Chatbot 實戰案例 II：Cloudflare + AWS 低成本架構與完整試算](https://ithelp.ithome.com.tw/articles/10396416)    |
+| 2025/10/13 |        [Day29 - RAG FAQ Chatbot 實戰案例 III：部署、連通、觀測與成本驗證](https://ithelp.ithome.com.tw/articles/10396825)         |
 
 ## ⚠️ 使用提醒
 
