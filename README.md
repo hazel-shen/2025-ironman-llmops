@@ -1,6 +1,6 @@
 # 2025-ironman-llmops
 
-(🚧 每日更新中...)
+(ᯓᡣ𐭩 已完賽～)
 
 本倉庫收錄了 2025 iThome 鐵人賽的相關內容與示範程式碼。  
 主題圍繞 **LLMOps**，透過每日的文章與程式碼範例，逐步展現從零到一的完整實作歷程。
@@ -39,6 +39,7 @@
 | 2025/10/11 | [Day27 - RAG FAQ Chatbot 實戰案例 I：功能驗收全紀錄（檢索 × 快取 × 安全 × 監控）](https://ithelp.ithome.com.tw/articles/10396078) |
 | 2025/10/12 |   [Day28 - RAG FAQ Chatbot 實戰案例 II：Cloudflare + AWS 低成本架構與完整試算](https://ithelp.ithome.com.tw/articles/10396416)    |
 | 2025/10/13 |        [Day29 - RAG FAQ Chatbot 實戰案例 III：部署、連通、觀測與成本驗證](https://ithelp.ithome.com.tw/articles/10396825)         |
+| 2025/10/14 |            [Day30 - 從 62% 到 75%+：Production Readiness 的最後一哩路](https://ithelp.ithome.com.tw/articles/10397099)            |
 
 ## ⚠️ 使用提醒
 
@@ -51,4 +52,11 @@
 
 善用資源：本系列內容主要用於學習與研究。若在實務專案中導入，建議額外考量 隱私保護、資料安全、成本監控 等議題，確保系統符合您的需求。
 
+- ✅ 個人學習、研究 → 隨意用
+- ✅ 分享給朋友、同事 → 沒問題
+- 💼 商業用途 → [聯繫作者](mailto:mail@hazel.style)
+
+> 詳細授權條款:[CC BY-NC-SA 4.0](連結)
+
+如果有幫助到你,歡迎給個 ⭐ 或留言交流! 😊
 🙏 希望這些內容能幫助您更順利地探索與實踐 `LLMOps`！

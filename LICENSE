@@ -1,21 +1,49 @@
-MIT License
+# LICENSE / 授權條款
 
-Copyright (c) 2025 Hazel Shen
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**  
+**姓名標示-非商業性-相同方式分享 4.0 國際**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (c) 2025 Hazel Shen | 著作權所有 (c) 2025 Hazel Shen
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## License Terms / 授權條款
+
+This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
+本專案採用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant) 授權
+
+### You are free to / 您可以自由地:
+
+- ✅ **Share** — copy and redistribute | **分享** — 重製及散布
+- ✅ **Adapt** — remix and transform | **修改** — 重混與轉換
+
+### Under the following terms / 但需遵守:
+
+- 📝 **Attribution (BY)** — Give appropriate credit | **姓名標示** — 給予適當表彰
+- 🚫 **NonCommercial (NC)** — No commercial use | **非商業性** — 不得商業使用
+- 🔄 **ShareAlike (SA)** — Same license for derivatives | **相同方式分享** — 衍生物需用相同授權
+
+---
+
+## Commercial Licensing / 商業授權
+
+**For commercial use, please contact:**  
+**如需商業使用,請聯繫:**
+
+- 📧 Email: mail@hazel.style
+- 💬 GitHub Issues: [Link](https://github.com/hazel-shen/2025-ironman-llmops/issues)
+
+---
+
+## Disclaimer / 免責聲明
+
+**EN:** THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+**ZH:** 本軟體按「現狀」提供,不附帶任何明示或暗示的擔保,包括但不限於適銷性、特定用途適用性及非侵權的擔保。
+
+---
+
+**Full License Text / 完整授權條款:**
+
+- English: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+- 繁體中文: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hant
