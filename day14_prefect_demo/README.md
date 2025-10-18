@@ -64,7 +64,7 @@ cp .env.example .env
 建議的 requirements.txt：
 
 ```txt
-prefect==2.19.8
+prefect==2.20.17
 pydantic==2.7.1
 pydantic-core==2.18.2
 griffe>=0.44,<1.0
