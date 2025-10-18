@@ -20,7 +20,7 @@
 | 2025/09/22 |              [Day08 - RAG 資料預處理：文件清洗與 Chunking 切片策略](https://ithelp.ithome.com.tw/articles/10385277)               |
 | 2025/09/23 |                  [Day09 - RAG 索引建置：向量化與 FAISS 索引實作](https://ithelp.ithome.com.tw/articles/10386191)                  |
 | 2025/09/24 |             [Day10 - RAG 查詢實作：Retriever ＋ Reranker 與模型評測](https://ithelp.ithome.com.tw/articles/10386952)              |
-| 2025/09/25 |              [Day11 - RAG 上下文優化：4 種策略實測，降低 Token 成本](https://ithelp.ithome.com.tw/articles/10387588)              |
+| 2025/09/25 |             [Day11 - RAG 上下文最佳化：4 種策略實測，降低 Token 成本](https://ithelp.ithome.com.tw/articles/10387588)             |
 | 2025/09/26 |               [Day12 - 知識庫資料管理：多來源整合 × 可追溯版本控制](https://ithelp.ithome.com.tw/articles/10388360)               |
 | 2025/09/27 |           [Day13 - 為什麼知識會「過期」？Data Drift 偵測與更新策略實作](https://ithelp.ithome.com.tw/articles/10388907)           |
 | 2025/09/28 |           [Day14 - LLMOps Pipeline 自動化：Prefect vs Dagster 實戰比較](https://ithelp.ithome.com.tw/articles/10389635)           |
@@ -41,12 +41,47 @@
 | 2025/10/13 |        [Day29 - RAG FAQ Chatbot 實戰案例 III：部署、連通、觀測與成本驗證](https://ithelp.ithome.com.tw/articles/10396825)         |
 | 2025/10/14 |            [Day30 - 從 62% 到 75%+：Production Readiness 的最後一哩路](https://ithelp.ithome.com.tw/articles/10397099)            |
 
+## 這系列適合誰?
+
+| 如果你是...    | 想解決...                           | 看完這系列你會...               |
+| -------------- | ----------------------------------- | ------------------------------- |
+| **DevOps/SRE** | 老闆要我部署 AI,但不知道坑在哪      | 建立 LLM 監控告警、成本控管機制 |
+| **後端工程師** | 會串 ChatGPT API,但不知道如何產品化 | 完成 RAG 系統,處理錯誤與降級    |
+| **技術主管**   | 需評估 LLM 導入的技術風險           | 產出完整的 LLMOps 技術方案      |
+
+**❌ 這系列不包含**: 模型訓練、Transformer 原理、深度學習數學  
+**✅ 你需要會**: Python 基礎、Docker 基本操作(不需 ML 背景)
+
+## 30 天完整學習地圖
+
+| 週次                    | 階段         | 核心問題                                                              | 主要產出                               | DevOps 技能                                 | 建議對象                               |
+| ----------------------- | ------------ | --------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------- | -------------------------------------- |
+| **Week 1**<br>Day 1-7   | **基礎建設** | - LLM 跟傳統服務有何不同?<br>- RAG 環境跟一般後端差在哪?              | ✅ 開發環境 Ready<br>第一個 RAG QA Bot | 環境準備<br>技術選型<br>向量資料庫          | 所有讀者：建立共同語言<br>             |
+| **Week 2**<br>Day 8-14  | **資料處理** | - 如何讓 LLM 讀懂公司文件?<br>- 知識會過期怎麼辦 （Data Drift 偵測）? | ✅ 向量資料庫上線<br>自動化更新流程    | ETL 思維<br>資料版本控制<br>Pipeline 編排   | 後端工程師：實作 RAG Pipeline<br>      |
+| **Week 3**<br>Day 15-21 | **功能開發** | - 如何控制 LLM 行為與成本?<br>- 如何監控輸出品質（幻覺偵測與告警）?   | ✅ QA Bot 可用<br>完整監控儀表板       | Prompt 管理<br>API Gateway<br>Observability | 後端工程師 與 SRE：API 與 監控設置     |
+| **Week 4**<br>Day 22-30 | **生產維運** | - 如何安全部署與持續優化?<br>- 成本如何降低?                          | ✅ 生產環境上線<br>成本優化方案        | CI/CD<br>版本治理<br>成本控管               | DevOps/SRE 與 技術主管：部署與成本計算 |
+
+**💡 學習建議**:
+
+- 每天 30-120 分鐘 (含實作)
+- 每週五檢查該週產出是否完成
+- 建議邊看邊跟著 GitHub Repo 實作
+- 完整程式碼: [GitHub 連結](https://github.com/hazel-shen/2025-ironman-llmops)
+
+**⚠️ 彈性閱讀**: Week 1 打基礎後,可依職能挑選 Week 2-4 重點章節
+
+**❌ 這系列不適合**:
+
+- 想學 Transformer 原理的 AI 研究者
+- 想做模型訓練/Fine-tuning 的 ML 工程師
+- 沒有 Python/Docker 基礎的人
+
 ## ⚠️ 使用提醒
 
 本系列文章與範例程式碼中，部分功能會用到 `OpenAI` API（如 `GPT-4o mini`、`GPT-4.1` 等）。
 在實作或延伸應用時，請特別留意以下事項：
 
-費用控制：不同模型的 API 價格差異很大。範例大多已做過「縮短 Prompt」、「選用較便宜模型」、「快取 Token」等優化。若您輸入大量資料或選擇高單價模型，費用可能會增加，請自行留意帳務。
+費用控制：不同模型的 API 價格差異很大。範例大多已做過「縮短 Prompt」、「選用較便宜模型」、「快取 Token」等改善。若您輸入大量資料或選擇高單價模型，費用可能會增加，請自行留意帳務。
 
 模型替換：範例以 `OpenAI` API 為主，但您也可以依需求改用其他 LLM 服務商（如 `Anthropic`、`Cohere`、`Azure OpenAI` 等），只要 API 介面相容或稍作調整即可。
 
@@ -58,5 +93,5 @@
 
 > 詳細授權條款:[CC BY-NC-SA 4.0](連結)
 
-如果有幫助到你,歡迎給個 ⭐ 或留言交流! 😊
+如果有幫助到你,歡迎給個 ⭐ 或留言交流! 😊 <br>
 🙏 希望這些內容能幫助您更順利地探索與實踐 `LLMOps`！
