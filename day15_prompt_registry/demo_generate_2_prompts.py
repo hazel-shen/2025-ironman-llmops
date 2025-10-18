@@ -1,4 +1,3 @@
-#
 # Demo generate 2 versions prompts
 from registry.registry import PromptRegistry
 
