@@ -36,11 +36,16 @@ class Guardrails:
         if mode == "off":
             return result, stats
 
+        MAX_TEXT_LENGTH = 50000  # 設定合理上限
+        if len(result) > MAX_TEXT_LENGTH:
+            result = result[:MAX_TEXT_LENGTH]
+            stats["truncated"] = True
+
         pii_cfg = self.policy.get("pii", {}).get("redact", [])
 
         if "email" in pii_cfg:
             result, n = re.subn(
-                r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
+                r"[A-Za-z0-9._=\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}",
                 "[REDACTED_EMAIL]",
                 result
             )
