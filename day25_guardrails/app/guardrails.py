@@ -65,7 +65,7 @@ class Guardrails:
 
         if "email" in pii_cfg:
             result, n = re.subn(
-                r"[A-Za-z0-9._=\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}",
+                r"[A-Za-z0-9._=\-]{1,64}@[A-Za-z0-9.\-]{1,255}\.[A-Za-z]{2,10}",
                 "[REDACTED_EMAIL]",
                 result
             )
