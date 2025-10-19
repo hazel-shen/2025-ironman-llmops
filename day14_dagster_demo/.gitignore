@@ -48,3 +48,4 @@ index/
 candidates.json
 reranked.json
 artifacts/
+~/.dagster
