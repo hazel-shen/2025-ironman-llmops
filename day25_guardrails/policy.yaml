@@ -43,3 +43,7 @@ retrieval:
 
 runtime:
   mode: "enforce" # 可選: "off" | "report" | "enforce"
+
+io_limit:
+  max_input_length: 1000000 # 1MB，防 ReDoS
+  max_output_length: 500000 # 500KB

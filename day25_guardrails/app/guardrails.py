@@ -1,21 +1,37 @@
 import re
 from typing import Dict, List, Tuple
+from html import escape
 
 def compile_patterns(patterns: List[str]) -> List[re.Pattern]:
     return [re.compile(p) for p in patterns]
 
-def sanitize_input(text: str) -> str:
+def sanitize_input(text: str, max_length: int = 1_000_000) -> str:
     if not text:
         return ""
-    # 移除控制字元（null、escape、unicode 控制符號）
+    
+    # 防 ReDoS
+    if len(text) > max_length:
+        text = text[:max_length]
+    # 移除危險的控制字元（null、escape、unicode 控制符號）
     text = re.sub(r"[\x00-\x1f\x7f]", "", text)
+
     # 移除 HTML/Script 標籤
-    text = re.sub(r"<.*?>", "", text)
+    text = re.sub(r"<[^>]{0,100}>", "", text)
+
+    # HTML 轉義：防止 XSS 攻擊
+    text = escape(text)
+
     return text
 
 class Guardrails:
     def __init__(self, policy: Dict):
         self.policy = policy
+
+        # 從 policy 讀取長度限制
+        self.max_input_length = policy.get("io_limit", {}).get("max_input_length", 1_000_000)
+        self.max_output_length = policy.get("io_limit", {}).get("max_output_length", 500_000)
+
+        # 編譯正則表達式
         self.input_patterns = compile_patterns(policy.get("input", {}).get("deny_patterns", []))
         self.output_patterns = compile_patterns(policy.get("output", {}).get("deny_patterns", []))
 
@@ -23,8 +39,12 @@ class Guardrails:
         violations = []
         if mode == "off":
             return False, violations
+        
+        # 使用配置的長度限制
+        text = (text or "")[:self.max_input_length]
+
         for pat in self.input_patterns:
-            if pat.search(text or ""):
+            if pat.search(text):
                 violations.append(f"input:{pat.pattern}")
                 if mode == "enforce":
                     return True, violations
@@ -36,9 +56,9 @@ class Guardrails:
         if mode == "off":
             return result, stats
 
-        MAX_TEXT_LENGTH = 50000  # 設定合理上限
-        if len(result) > MAX_TEXT_LENGTH:
-            result = result[:MAX_TEXT_LENGTH]
+        
+        if len(result) > self.max_input_length:
+            result = result[:self.max_input_length]
             stats["truncated"] = True
 
         pii_cfg = self.policy.get("pii", {}).get("redact", [])
@@ -75,6 +95,7 @@ class Guardrails:
         violations = []
         if mode == "off":
             return False, violations
+        
         for pat in self.output_patterns:
             if pat.search(text or ""):
                 violations.append(f"output:{pat.pattern}")
@@ -88,6 +109,7 @@ class Guardrails:
             return True, violations
 
         docs = self.policy.get("retrieval", {}).get("docs", {})
+        
         for doc_id in doc_ids:
             roles = docs.get(doc_id, {}).get("roles", [])
             if user_role not in roles:
