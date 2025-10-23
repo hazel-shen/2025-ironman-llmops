@@ -1,6 +1,6 @@
 # === Core ===
 torch>=2.1.0                   # M3 CPU/MPS 可用
-transformers==4.51.0           # Qwen2.5 模型載入
+transformers==4.53.0           # Qwen2.5 模型載入
 datasets==3.0.0                # 資料處理
 peft==0.13.0                   # LoRA 微調
 accelerate==1.1.0             # 訓練加速
