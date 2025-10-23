@@ -40,6 +40,8 @@
 | 2025/10/12 |   [Day28 - RAG FAQ Chatbot 實戰案例 II：Cloudflare + AWS 低成本架構與完整試算](https://ithelp.ithome.com.tw/articles/10396416)    |
 | 2025/10/13 |        [Day29 - RAG FAQ Chatbot 實戰案例 III：部署、連通、觀測與成本驗證](https://ithelp.ithome.com.tw/articles/10396825)         |
 | 2025/10/14 |            [Day30 - 從 62% 到 75%+：Production Readiness 的最後一哩路](https://ithelp.ithome.com.tw/articles/10397099)            |
+| 2025/10/15 |                [Day31 - 鐵人賽後記：30 天、 ♾️ 次想放棄、1 句感謝](https://ithelp.ithome.com.tw/articles/10397354)                |
+| 2025/10/23 |  [Day32 - 進階篇：Macbook Air M3 本機 LoRA 微調 Qwen2.5（30 分鐘，相似度 92%）](https://ithelp.ithome.com.tw/articles/10398108)   |
 
 ## 這系列適合誰?
 
