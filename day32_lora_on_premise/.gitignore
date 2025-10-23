@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Envs
+.env
+.venv/
+
+# Artifacts
+*.tar.gz
+*.index
+
+# Local data (若不想忽略可自行調整)
+/data
+/out-kb-lora
+
+# Hugging Face 快取
+.cache/
+
+# 模型檔案 (太大,不要進版控)
+models/
+
+# 微調結果
+test_outputs/
+qwen_lora_output/
