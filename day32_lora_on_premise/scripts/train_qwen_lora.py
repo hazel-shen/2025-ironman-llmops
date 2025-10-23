@@ -25,8 +25,7 @@ from datetime import datetime
 # ==================== 配置區 ====================
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 OUTPUT_DIR = "./qwen_lora_output"
-TRAIN_FILE = "./data/train_qwen_final.jsonl" # 358
-# TRAIN_FILE = "./data/train_qwen_v1.jsonl"
+TRAIN_FILE = "./data/train_qwen_v1.jsonl"
 EVAL_FILE = "./data/eval_qwen_v1.jsonl"
 
 # LoRA 配置

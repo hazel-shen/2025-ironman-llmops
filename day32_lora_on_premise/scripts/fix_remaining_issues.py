@@ -96,6 +96,8 @@ def main():
     output_file = "./data/train_qwen_final.jsonl"
     with open(output_file, 'w', encoding='utf-8') as f:
         for item in final_data:
+            # lgtm[py/clear-text-storage-sensitive-data]
+            # 此資料僅用於知識庫生成,非生產環境敏感資料
             f.write(json.dumps(item, ensure_ascii=False) + '\n')
     
     print(f"✅ 已保存至：{output_file}")

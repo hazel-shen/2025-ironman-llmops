@@ -23,3 +23,4 @@ models/
 # 微調結果
 test_outputs/
 qwen_lora_output/
+error_analysis.json

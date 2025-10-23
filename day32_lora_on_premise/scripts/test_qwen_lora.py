@@ -109,6 +109,14 @@ def detect_answer_source(question, model_answer, kb_dict):
     }
     
     # 關鍵字規則
+    # | 主題關鍵字 | 動作 | 說明 |
+    # |----------|------|------|
+    # | VPN / SSO / 內網 | 覆寫為 KB 標準答案 | 確保 VPN 設定流程一致 |
+    # | MFA / OTP / Authenticator | 覆寫為 KB 標準答案 | 強制回答 MFA 政策 |
+    # | 密碼 / 重設 / 過期 | 覆寫為 KB 標準答案 | 密碼重設流程標準化 |
+    # | 遠端 / 在家 / WFH | 覆寫為 KB 標準答案 | 遠端辦公政策 |
+    # | 請假 / 休假 | 覆寫為 KB 標準答案 | 假勤規範 |
+    
     rules = {
         "MFA": r"(驗證碼|OTP|authenticator|雙因子|多因子|MFA|mfa|2FA)",
         "密碼": r"(密碼錯誤|忘記密碼|重設密碼|密碼過期|忘了密碼|密碼重置)",
