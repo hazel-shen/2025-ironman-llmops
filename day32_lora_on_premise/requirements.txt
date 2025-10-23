@@ -1,13 +1,13 @@
 # === Core ===
 torch>=2.1.0                   # M3 CPU/MPS 可用
-transformers==4.45.2           # Qwen2.5 模型載入
+transformers==4.51.0           # Qwen2.5 模型載入
 datasets==3.0.0                # 資料處理
 peft==0.13.0                   # LoRA 微調
-accelerate==0.26.1             # 訓練加速
+accelerate==1.1.0             # 訓練加速
 
 # === Model IO ===
 safetensors>=0.4.0             # LoRA 權重載入
-huggingface-hub==0.25.0        # 模型下載
+huggingface-hub>=0.30.0,<1.0        # 模型下載
 
 # === Tokenizer ===
 protobuf>=3.20.0               # tokenizer 序列化
