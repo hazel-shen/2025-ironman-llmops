@@ -42,6 +42,8 @@
 | 2025/10/14 |            [Day30 - 從 62% 到 75%+：Production Readiness 的最後一哩路](https://ithelp.ithome.com.tw/articles/10397099)            |
 | 2025/10/15 |                [Day31 - 鐵人賽後記：30 天、 ♾️ 次想放棄、1 句感謝](https://ithelp.ithome.com.tw/articles/10397354)                |
 | 2025/10/23 |  [Day32 - 進階篇：Macbook Air M3 本機 LoRA 微調 Qwen2.5（30 分鐘，相似度 92%）](https://ithelp.ithome.com.tw/articles/10398108)   |
+| 2025/10/24 |              [Day33 - 進階篇：LoRA 微調失敗 N 次才成功？踩坑血淚史](https://ithelp.ithome.com.tw/articles/10398140)               |
+| 2025/10/27 |             [Day34 - 番外篇：需要微調嗎？從 DevOps 角度評估生產部署](https://ithelp.ithome.com.tw/articles/10398228)              |
 
 ## 這系列適合誰?
 
