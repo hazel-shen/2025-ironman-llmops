@@ -1,4 +1,4 @@
-dagster==1.11.3
+dagster==1.13.1
 dagster-webserver==1.11.3
 antlr4-python3-runtime==4.13.2
 openai>=1.40.2
