@@ -1,4 +1,4 @@
-prefect==2.20.17
+prefect==3.6.28.dev2
 pydantic==2.7.1
 pydantic-core==2.18.2
 griffe>=0.44,<1.0
