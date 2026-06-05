@@ -14,5 +14,5 @@ protobuf>=3.20.0               # tokenizer 序列化
 sentencepiece>=0.1.99          # 部分模型需要
 
 # === Data / Sci ===
-pyarrow==15.0.0                # datasets 底層依賴
+pyarrow==23.0.1                # datasets 底層依賴
 scipy>=1.10.0
